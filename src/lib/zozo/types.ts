@@ -45,7 +45,7 @@ export type ZozoCommandType =
 
 export interface ZozoCommand {
   type: ZozoCommandType;
-  payload?: Record<string, unknown>;
+  payload?: Record<string, unknown> | undefined;
   at: number;
 }
 
